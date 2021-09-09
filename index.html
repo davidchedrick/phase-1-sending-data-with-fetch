@@ -5,11 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="index.js"></script>
     <title>JavaScript Lab</title>
   </head>
 
   <body>
-    <script src="index.js"></script>
+    <div>
+      <h1>Form</h1>
+      <form id = "formArea" action="http://localhost:3000/users" method="POST">
+        <label> Name: <input type="text" name="name" id="name" /></label><br />
+        <label> Email: <input type="text" name="email" id="email" /></label><br />
+        <input type="submit" id="submit" value="Submit" />
+     </form>
+    </div>
+    <div id = "userArea"></div>
+    
   </body>
 
 </html>
